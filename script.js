@@ -1,5 +1,5 @@
 var btn = document.getElementById('btn');
-var copyText = document.getElementById('myInput');
+var copyText = 'this is to be copied to clipboard';
 var color = '';
 
 var re = () => {
@@ -9,7 +9,7 @@ var re = () => {
   color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
   document.body.style.backgroundColor = color;
   btn.innerHTML = color;
-  copyText.value = color;
+  copyText = color;
 };
 
 // var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -17,19 +17,21 @@ var re = () => {
 //   return new bootstrap.Popover(popoverTriggerEl)
 // })
 
-var copy = () => {
-  /* Get the text field */
-  // var copyText = document.getElementById('btn');
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
+function copyToClipboard(text) {
+  var dummy = document.createElement('textarea');
+  // to avoid breaking orgain page when copying more words
+  // cant copy when adding below this code
+  // dummy.style.display = 'none'
+  document.body.appendChild(dummy);
+  //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
+  dummy.value = text;
+  dummy.select();
   document.execCommand('copy');
+  document.body.removeChild(dummy);
+}
 
-  /* Alert the copied text */
-  // alert('Copied the text: ' + copyText.value);
+var copy = () => {
+  copyToClipboard(color);
 };
 
 re();

@@ -1,6 +1,12 @@
-var r = document.getElementById('r-color');
-var g = document.getElementById('g-color');
-var b = document.getElementById('b-color');
+const btn = document.getElementById('btn');
 
-document.body.style.backgroundColor =
-  'rgb(' + 120 + ', ' + 30 + ', ' + 100 + ')';
+var re = () => {
+  var r = document.getElementById('r-color').value;
+  var g = document.getElementById('g-color').value;
+  var b = document.getElementById('b-color').value;
+  var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+  document.body.style.backgroundColor = color;
+  btn.innerHTML = color;
+};
+
+re();

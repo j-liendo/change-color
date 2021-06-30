@@ -1,0 +1,26 @@
+.h {
+  background-color: rgb(120, 30, 100);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40vh;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.change {
+  margin-top: 20px;
+}

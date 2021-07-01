@@ -56,7 +56,7 @@ function copyToClipboard(text) {
 }
 
 function copy() {
-    copyToClipboard(color);
+    copyToClipboard(colorHex);
 };
 
 main();

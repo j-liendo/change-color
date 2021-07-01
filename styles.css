@@ -5,17 +5,16 @@
     height: 100vh;
 }
 
-.card {
+.css-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
     width: 50vh;
     height: 70vh;
     max-height: 480px;
-}
-
-#btn {
-    height: 100%;
 }
 
 .inputs {

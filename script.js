@@ -3,7 +3,7 @@ var btn = document.getElementById('btn');
 var color = '';
 
 
-function re() {
+function main() {
     // rangnge DOM
     var r = document.getElementById('r-color').value;
     var g = document.getElementById('g-color').value;
@@ -59,4 +59,4 @@ function copy() {
     copyToClipboard(color);
 };
 
-re();
+main();

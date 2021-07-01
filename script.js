@@ -12,11 +12,6 @@ var re = () => {
   copyText = color;
 };
 
-// var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-// var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-//   return new bootstrap.Popover(popoverTriggerEl)
-// })
-
 function copyToClipboard(text) {
   var dummy = document.createElement('textarea');
   // to avoid breaking orgain page when copying more words
@@ -30,7 +25,7 @@ function copyToClipboard(text) {
   document.body.removeChild(dummy);
 }
 
-var copy = () => {
+var copy = function() {
   copyToClipboard(color);
 };
 

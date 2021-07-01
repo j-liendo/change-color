@@ -3,13 +3,25 @@ var copyText = 'this is to be copied to clipboard';
 var color = '';
 
 var re = () => {
+  // rangnge DOM
   var r = document.getElementById('r-color').value;
   var g = document.getElementById('g-color').value;
   var b = document.getElementById('b-color').value;
+
+  // label DOM
+  var rLabel = document.getElementById('r-color-label');
+  var gLabel = document.getElementById('g-color-label');
+  var bLabel = document.getElementById('b-color-label');
+
   color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
   document.body.style.backgroundColor = color;
   btn.innerHTML = color;
   copyText = color;
+
+  // Write Labels
+  rLabel.innerHTML = '<b>R</b>' + r;
+  gLabel.innerHTML = '<b>G</b>' + g;
+  bLabel.innerHTML = '<b>B</b>' + b;
 };
 
 function copyToClipboard(text) {

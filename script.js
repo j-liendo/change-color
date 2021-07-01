@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {});
 var btn = document.getElementById('btn');
 var color = '';
+var colorHex = '';
 
 
 function main() {
@@ -17,7 +18,7 @@ function main() {
     // Write on the DOM
     color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
     document.body.style.backgroundColor = color;
-    var colorHex = fullColorHex(r, g, b);
+    colorHex = fullColorHex(r, g, b);
     btn.innerHTML = colorHex;
 
     // Write Labels

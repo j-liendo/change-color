@@ -18,14 +18,14 @@
 
 <body>
     <div class="flex">
-        <div class="card">
+        <div class="card d-flex flex-column justify-content-around">
             <div class="inputs">
-                <label class="text-primary" for="r-color" id="r-color-label">R</label>
-                <input oninput="main()" value="125" type="range" class="form-range" id="r-color" max="255" min="0" />
-                <label class="text-success" for="g-color" id="g-color-label">G</label>
-                <input oninput="main()" value="125" type="range" class="form-range" id="g-color" max="255" min="0" />
-                <label class="text-danger" for="b-color" id="b-color-label">B</label>
-                <input oninput="main()" value="125" type="range" class="form-range" id="b-color" max="255" min="0" />
+                <label class="mt-3 text-primary" for="r-color" id="r-color-label">R</label>
+                <input class="mt-3 form-range" oninput="main()" value="125" type="range" id="r-color" max="255" min="0" />
+                <label class="mt-3 text-success" for="g-color" id="g-color-label">G</label>
+                <input class="mt-3 form-range" oninput="main()" value="125" type="range" id="g-color" max="255" min="0" />
+                <label class="mt-3 text-danger" for="b-color" id="b-color-label">B</label>
+                <input class="mt-3 form-range" oninput="main()" value="125" type="range" id="b-color" max="255" min="0" />
 
                 <input class="d-none" type="text" value="Hello World" id="myInput" />
             </div>

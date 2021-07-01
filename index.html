@@ -24,10 +24,9 @@
   <body>
     <div class="flex">
       <div class="card d-flex flex-column justify-content-around">
-        <div class="card-body">
-          <div class="inputs">
-            <label class="mt-3 text-primary" for="r-color" id="r-color-label">R</label>
-            <input
+        <div class="inputs">
+          <label class="mt-3 text-primary" for="r-color" id="r-color-label">R</label>
+          <input
             class="mt-3 form-range"
             oninput="main()"
             value="125"
@@ -35,9 +34,9 @@
             id="r-color"
             max="255"
             min="0"
-            />
-            <label class="mt-3 text-success" for="g-color" id="g-color-label">G</label>
-            <input
+          />
+          <label class="mt-3 text-success" for="g-color" id="g-color-label">G</label>
+          <input
             class="mt-3 form-range"
             oninput="main()"
             value="125"
@@ -45,9 +44,9 @@
             id="g-color"
             max="255"
             min="0"
-            />
-            <label class="mt-3 text-danger" for="b-color" id="b-color-label">B</label>
-            <input
+          />
+          <label class="mt-3 text-danger" for="b-color" id="b-color-label">B</label>
+          <input
             class="mt-3 form-range"
             oninput="main()"
             value="125"
@@ -55,16 +54,15 @@
             id="b-color"
             max="255"
             min="0"
-            />
-          </div>
-          <div class="d-grid gap-2 change">
-            <button
+          />
+        </div>
+        <div class="d-grid gap-2 change">
+          <button
             onclick="copy()"
             id="btn"
             type="button"
             class="btn btn-primary"
-            ></button>
-          </div>
+          ></button>
         </div>
       </div>
     </div>

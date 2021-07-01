@@ -5,14 +5,14 @@
     height: 100vh;
 }
 
-.card {
+/* .card {
     background-color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
     width: 50vh;
     height: 70vh;
     max-height: 480px;
-}
+} */
 
 #btn {
     height: 100%;
@@ -21,9 +21,4 @@
 .inputs {
     display: flex;
     flex-direction: column;
-}
-
-.change {
-    margin-top: 20px;
-    height: 70px;
 }
